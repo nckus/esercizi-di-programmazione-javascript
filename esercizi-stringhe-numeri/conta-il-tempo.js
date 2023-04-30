@@ -12,4 +12,20 @@
 
   http://www.imparareaprogrammare.it
 */
-var time = 0;
+var seconds = 12560;
+var hour = seconds/3600;
+hour = (Math.trunc(hour)); //usando la funzione Math.trunc() tolgo la parte decimale del risultato
+
+console.log(hour + ' ore');
+
+var min = 3600 * hour;
+var min1 = seconds - min;
+var min2 = min1/60;
+min2 = (Math.trunc(min2));
+
+console.log(min2 +' minuti'); //usando la funzione Math.trunc() tolgo la parte decimale del risultato
+
+var sec = min2 * 60;
+var sec1 = min1 - sec;
+
+console.log(sec1 +' secondi');
